@@ -12,7 +12,7 @@ public class MoveController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector3(joystick.Horizontal * (-speed), rb.velocity.y, joystick.Vertical * (-speed));
+        rb.velocity = new Vector3(joystick.Horizontal * speed, rb.velocity.y, joystick.Vertical * speed);
 
         if(joystick.Horizontal != 0 || joystick.Vertical != 0)
         {
